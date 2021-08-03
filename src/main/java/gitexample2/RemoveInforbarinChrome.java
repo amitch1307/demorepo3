@@ -1,5 +1,7 @@
 package gitexample2;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -19,6 +21,8 @@ public class RemoveInforbarinChrome {
 		
 		driver = new ChromeDriver(option);
 		driver.get("https://www.google.com");
+		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		 
 		
 	}
 

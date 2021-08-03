@@ -31,6 +31,15 @@ public class findAlllinks {
 		List<WebElement> alllink= driver.findElements(By.tagName("a"));
 		System.out.println(alllink.size());
 		
+		for (int i=0;i<alllink.size();i++)
+		{
+			System.out.println(alllink.get(i).getAttribute("href"));
+		}
+		
+		for(WebElement e:alllink)
+		{
+			System.out.println(e.getAttribute("href"));
+		}
 		
 		
 	}

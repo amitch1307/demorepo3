@@ -46,7 +46,7 @@ public class findAlllinks {
 		{
 			
 			
-			if((e.getAttribute("href")!=null) );
+			if((e.getAttribute("href")!=null));
 			System.out.println(e.getAttribute("href"));
 		}
 		

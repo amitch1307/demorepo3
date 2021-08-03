@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="gitexample2.findAlllinks">
+      <class name="gitexample2.RemoveInforbarinChrome">
         <methods>
-          <include name="findAllPagelinks"/>
+          <include name="RemoveIfobar"/>
         </methods>
-      </class> <!-- gitexample2.findAlllinks -->
+      </class> <!-- gitexample2.RemoveInforbarinChrome -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

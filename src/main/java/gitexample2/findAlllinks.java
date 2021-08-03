@@ -8,15 +8,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterMethod;
+
 import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 
 public class findAlllinks {
-	
+	WebDriver  driver; 
 	@Test
 	public void findAllPagelinks() {
-		WebDriver  driver; 
+		
 		ChromeDriverManager.chromedriver().setup();
 		
 		ChromeOptions option = new ChromeOptions();
@@ -33,16 +35,32 @@ public class findAlllinks {
 		
 		for (int i=0;i<alllink.size();i++)
 		{
+			if((alllink.get(i).getAttribute("href") !=null) && (!alllink.get(i).getAttribute("href").contains("javascript")))  
+			{
 			System.out.println(alllink.get(i).getAttribute("href"));
-		}
 		
+			}
+		}
+		System.out.println("Using advanced for loop -------> ");
 		for(WebElement e:alllink)
 		{
+			
+			
+			if((e.getAttribute("href")!=null) );
 			System.out.println(e.getAttribute("href"));
 		}
 		
 		
+		
 	}
+	
+	@AfterMethod
+	public void quit()
+	{
+		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
+		//driver.quit();
+	}
+
 	
 
 }

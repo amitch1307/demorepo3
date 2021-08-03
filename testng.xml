@@ -5,6 +5,7 @@
     <classes>
       <class name="gitexample2.runbrowserincognito"/>
       <class name="gitexample2.RemoveInforbarinChrome"/>
+          <class name="gitexample2.findAlllinks"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

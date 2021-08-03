@@ -2,15 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8201" started-at="2021-08-03T10:12:26 IST" finished-at="2021-08-03T10:12:35 IST">
+  <suite name="Default suite" duration-ms="7488" started-at="2021-08-03T14:00:44 IST" finished-at="2021-08-03T14:00:52 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8201" started-at="2021-08-03T10:12:26 IST" finished-at="2021-08-03T10:12:35 IST">
+    <test name="Default test" duration-ms="7488" started-at="2021-08-03T14:00:44 IST" finished-at="2021-08-03T14:00:52 IST">
       <class name="gitexample2.findAlllinks">
-        <test-method status="PASS" signature="findAllPagelinks()[pri:0, instance:gitexample2.findAlllinks@5891e32e]" name="findAllPagelinks" duration-ms="8158" started-at="2021-08-03T10:12:26 IST" finished-at="2021-08-03T10:12:35 IST">
+        <test-method status="PASS" signature="findAllPagelinks()[pri:0, instance:gitexample2.findAlllinks@28ac3dc3]" name="findAllPagelinks" duration-ms="7439" started-at="2021-08-03T14:00:44 IST" finished-at="2021-08-03T14:00:52 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findAllPagelinks -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:gitexample2.findAlllinks@28ac3dc3]" name="quit" is-config="true" duration-ms="5" started-at="2021-08-03T14:00:52 IST" finished-at="2021-08-03T14:00:52 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
       </class> <!-- gitexample2.findAlllinks -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

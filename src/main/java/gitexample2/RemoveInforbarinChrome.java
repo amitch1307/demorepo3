@@ -12,10 +12,11 @@ import org.testng.annotations.Test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class RemoveInforbarinChrome {
+	
 	WebDriver driver;
 	@Test
 	public void RemoveIfobar() {
-		 
+	//Using chromeoptions and web driver managar	 
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions option=new ChromeOptions();
 		
